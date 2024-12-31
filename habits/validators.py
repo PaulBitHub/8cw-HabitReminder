@@ -20,16 +20,12 @@ def validate_related_habit(data):
     related_habit = data.get("related_habit")
     if related_habit and not related_habit.is_pleasant:
         raise serializers.ValidationError(
-            {
-                "related_habit": "Связанной привычкой может быть только приятная привычка"
-            }
+            {"related_habit": "Связанной привычкой может быть только приятная привычка"}
         )
 
 
 def validate_pleasant_habit(data):
-    if data.get("is_pleasant") and (
-        data.get("reward") or data.get("related_habit")
-    ):
+    if data.get("is_pleasant") and (data.get("reward") or data.get("related_habit")):
         raise serializers.ValidationError(
             "Приятная привычка не может иметь вознаграждение или связанную привычку"
         )
