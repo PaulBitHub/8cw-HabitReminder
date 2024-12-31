@@ -1,7 +1,11 @@
 # Program - Habit Reminder
 
 ## Overview
-he Habit Reminder API is a Django REST Framework-based backend for managing personal habits. It allows users to create, track, and share habits with customizable settings like periodicity, duration, and rewards. The API supports authentication, ensuring users can manage their habits securely while also accessing public habits shared by others
+The Habit Reminder API is a Django REST Framework-based backend for managing personal habits.
+It allows users to create, track, and share habits with customizable settings like periodicity, duration, and rewards.
+The API supports authentication, ensuring users can manage their habits securely while also accessing public habits
+shared by others.
+
 ## Installation and Setup with Docker
 
 ### 1. Clone the Repository
